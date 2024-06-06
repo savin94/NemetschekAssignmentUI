@@ -1,0 +1,45 @@
+.list-element-label {
+    margin: 0px;
+    align-self: center;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    width: 30%;
+  }
+  
+  .form-control, .form-select {
+    width: 100%;  
+    padding: 20px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+
+.list-item-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+    display: flex;
+}
+
+.support-button {
+    display: none;
+}
+
+.form-wrapper {
+    padding-top: 20px;
+}

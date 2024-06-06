@@ -1,0 +1,21 @@
+<form [formGroup]="form2" class="form-wrapper">
+    <div class="row" [class.disabled]="isFieldDisabled">
+        <label for="field3" class="form-label">field3</label>
+        <input type="text" formControlName="field3" class="form-control" (keyup.enter)="addItem()" placeholder="Enter your text">
+        <button class="support-button" (click)="addItem()"></button>
+    </div>
+    <mat-list>
+        @for (item of items; track $index) {
+        <mat-list-item style="padding: 0px;">
+            <div class="list-item-wrapper">
+                <p class="list-element-label">{{ item }}</p>
+                <button mat-icon-button matTooltip="Remove" (click)="removeItem(item)">
+                    <mat-icon style="color: red;">remove</mat-icon>
+                </button>
+            </div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        }
+    </mat-list>
+
+</form>

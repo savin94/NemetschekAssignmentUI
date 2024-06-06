@@ -1,0 +1,12 @@
+<div class="main-wrapper">
+  <div class="title-header"><p>Nemetschek Assignment</p></div>
+  <button class="main-button" mat-raised-button color="primary" (click)="save()" [disabled]="!canSave">Save</button>
+  <mat-tab-group>
+    <mat-tab label="Tab1">
+      <app-tab1></app-tab1>
+    </mat-tab>
+    <mat-tab label="Tab2">
+      <app-tab2></app-tab2>
+    </mat-tab>
+  </mat-tab-group>
+</div>

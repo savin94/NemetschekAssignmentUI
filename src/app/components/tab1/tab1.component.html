@@ -1,0 +1,15 @@
+<form [formGroup]="form1" class="form-wrapper">
+  <div class="form-group">
+    <div class="row">
+      <label for="field1" class="form-label">field1</label>
+      <input type="text" formControlName="field1" class="form-control" id="field1" placeholder="Enter your text">
+    </div>
+    <div class="row">
+      <label for="field2" class="form-label">field2</label>
+      <select formControlName="field2" class="form-control" id="field2">
+        <option value="value1">Value 1</option>
+        <option value="value2">Value 2</option>
+      </select>
+    </div>
+  </div>
+</form>
